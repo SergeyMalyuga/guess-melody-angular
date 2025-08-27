@@ -1,0 +1,23 @@
+<main class="app">
+  <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: -1200em;">
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur>
+      <feOffset dx="0" dy="0"></feOffset>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </svg>
+
+  <section class="main" id="root">
+    <section class="result">
+      <div class="result__logo"><img src="img/melody-logo.png" alt="Угадай мелодию" width="186" height="83"></div>
+      <h2 class="result__title">Во что будем играть :)</h2>
+      <a class="select__game-link a1" [routerLink]=AppRoutes.WELCOME>Угадай Исполнителя</a>
+      <a class="select__game-link a2" [routerLink]=AppRoutes.WELCOME>Угадай Жанр</a>
+    </section>
+  </section>
+</main>
+
+<app-header></app-header>

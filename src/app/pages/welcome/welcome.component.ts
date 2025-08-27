@@ -1,5 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {HeaderComponent} from '../../shared/header/header.component';
+import {Router} from '@angular/router';
+import {AppRoutes} from '../../core/constants/const';
 
 @Component({
   selector: 'app-welcome',
@@ -11,4 +13,9 @@ import {HeaderComponent} from '../../shared/header/header.component';
 })
 export class WelcomeComponent {
 
+  private router = inject(Router);
+
+  startGameSetup() {
+    this.router.navigate([AppRoutes.GAME_SELECTION]);
+  }
 }

@@ -1,0 +1,30 @@
+.select__game-link {
+  position: relative;
+  margin-top: 20px;
+  padding: 0 40px 0 0;
+  color: #ff9749;
+  font-size: 30px;
+  border: 0;
+  background: 0 0;
+  text-decoration: none;
+}
+
+.select__game-link:focus, .select__game-link:hover {
+  color: #f00000; }
+
+/*.select__game-link::after{*/
+/*  position: absolute;*/
+/*  content: "";*/
+/*  width: 27px;*/
+/*  height: 25px;*/
+/*  top: 50%;*/
+/*  right: 0;*/
+/*  background-image: url(../img/sprite.png);*/
+/*  background-position: -5px -260px;*/
+/*  -webkit-transform: translateY(-50%);*/
+/*  transform: translateY(-50%); }*/
+
+/*.a1 {*/
+/*  align-self: start;*/
+/*  margin-inline-start: 100px;*/
+/*}*/
