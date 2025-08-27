@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {HeaderComponent} from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-welcome',
-  imports: [],
   templateUrl: './welcome.component.html',
-  styleUrl: './welcome.component.css',
+  imports: [
+    HeaderComponent
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WelcomeComponent {
