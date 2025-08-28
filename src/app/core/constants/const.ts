@@ -10,6 +10,7 @@ export enum AppRoutes {
 export enum APIRoutes {
   LOGIN = 'login',
   LOGOUT = 'logout',
+  QUESTIONS = 'questions',
 }
 
 export const BASE_URL = 'https://15.design.htmlacademy.pro/spec/guess-melody';
